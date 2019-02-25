@@ -1,0 +1,19 @@
+.artistsGrid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    overflow: auto;
+}
+
+.addButton {
+    composes: button from 'styles/button.scss';
+    composes: primaryButton from 'styles/button.scss';
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18pt;
+    font-weight: bold;
+}

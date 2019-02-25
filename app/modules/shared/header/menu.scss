@@ -1,0 +1,54 @@
+@value colors: "styles/colors.scss";
+@value secondary from colors;
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+        li {
+            position: relative;
+            height: 100%;
+
+            &:hover {
+                a::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        a {
+            height: 100%;
+            color: secondary;
+            display: inline-block;
+            margin: 0;
+            text-transform: uppercase;
+            padding: 0 2em;
+            text-decoration: none;
+
+            span {
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+        }
+
+        a::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            content: '';
+            border-bottom: solid 4px secondary;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
+    }
+}
+
+.active::after {
+    transform: scaleX(1);
+}

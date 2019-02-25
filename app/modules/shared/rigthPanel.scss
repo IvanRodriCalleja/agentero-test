@@ -1,0 +1,63 @@
+@value colors: "styles/colors.scss";
+@value primary, secondary, greyDark from colors;
+
+.rightPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: primary;
+    width: 300px;
+    border-left: solid 2px secondary;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 18pt;
+    text-align: center;
+    height: 70px;
+    box-sizing: border-box;
+    border-bottom: solid 1px greyDark;
+    width: calc(100% - 1px);
+    margin-left: 1px;
+
+    h3 {
+        width: 100%;
+    }
+}
+
+.formContainer {
+    padding: 0 18px;
+}
+
+.buttonsContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 1px;
+    display: flex;
+    padding: 18px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 57px;
+    border-top: solid 1px greyDark;
+
+    @media screen and (max-width: 650px) {
+        height: 81px;
+    }
+}
+
+.acceptButton {
+    composes: button from 'styles/button.scss';
+    composes: primaryButton from 'styles/button.scss';
+    width: calc(50% - 6px);
+}
+
+.cancelButton {
+    composes: button from 'styles/button.scss';
+    composes: primaryButton from 'styles/button.scss';
+    width: calc(50% - 6px);
+}

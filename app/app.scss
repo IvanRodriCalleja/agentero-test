@@ -1,0 +1,8 @@
+main {
+    height: calc(100% - 127px);
+    overflow: auto;
+
+    @media screen and (max-width: 650px) {
+        height: calc(100% - 151px);
+    }
+}

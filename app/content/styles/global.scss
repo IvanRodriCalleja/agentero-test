@@ -1,0 +1,25 @@
+@value colors: "./colors.scss";
+@value primary from colors;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+:global {
+    div#app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: primary;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    }
+}

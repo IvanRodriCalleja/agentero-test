@@ -1,0 +1,9 @@
+@value colors: "styles/colors.scss";
+@value secondary from colors;
+
+.logo {
+    fill: secondary;
+    height: 50px;
+    padding: 8px;
+    margin-left: 40px;
+}

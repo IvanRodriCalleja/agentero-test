@@ -1,0 +1,18 @@
+@value colors: "styles/colors.scss";
+@value textClear, textDark from colors;
+
+.item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 4px;
+}
+
+.pairInfoLabel {
+    color: textDark;
+    margin-right: 8px;
+}
+
+.pairInfoText {
+    color: textClear;
+}

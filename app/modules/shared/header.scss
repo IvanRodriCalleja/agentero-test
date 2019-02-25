@@ -1,0 +1,12 @@
+@value colors: "styles/colors.scss";
+@value primary, secondary, greyDark from colors;
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: primary;
+    color: secondary;
+    border-bottom: solid 1px greyDark;
+    height: 70px;
+}

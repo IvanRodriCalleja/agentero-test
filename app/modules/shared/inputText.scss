@@ -1,0 +1,31 @@
+@value colors: "styles/colors.scss";
+@value secondary, greyDark from colors;
+
+.inputContainer {
+    margin-bottom: 12px;
+}
+
+.input {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 14pt;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    border-bottom: solid 1px greyDark;
+    transition: 0.4s;
+    color: greyDark;
+}
+
+.input:focus {
+    border-color: secondary;
+}
+
+.input::placeholder {
+    color: greyDark;
+    opacity: 0.4;
+}

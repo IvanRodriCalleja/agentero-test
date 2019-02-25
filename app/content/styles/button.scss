@@ -1,0 +1,27 @@
+@value colors: "styles/colors.scss";
+@value secondary, textClear from colors;
+
+.button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 4px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.button:active {
+    transform: translateY(4px);
+}
+
+.primaryButton {
+    color: textClear;
+    background: secondary;
+}

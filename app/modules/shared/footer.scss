@@ -1,0 +1,14 @@
+@value colors: "styles/colors.scss";
+@value primary, secondary, greyDark from colors;
+
+footer {
+    background: primary;
+    padding: 1em;
+    box-sizing: border-box;
+    border-top: solid 1px greyDark;
+    height: 57px;
+
+    @media screen and (max-width: 650px) {
+        height: 81px;
+    }
+}

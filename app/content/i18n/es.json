@@ -1,0 +1,26 @@
+{
+    "menu": {
+        "artists": "Artistas",
+        "genres": "Géneros"
+    },
+    "footer": {
+        "createdBy": "Creado por: ",
+        "contact": "Contacto: "
+    },
+    "artists": {
+        "add": "Añadir artista"
+    },
+    "createArtist": {
+        "title": "Nuevo artista"
+    },
+    "artistEdit": {
+        "name": "Nombre",
+        "stageName": "Nombre artístico",
+        "image": "Imagen",
+        "dropImage": "Arrastra imagen"
+    },
+    "rightPanel": {
+        "accept": "Aceptar",
+        "cancel": "Cancelar"
+    }
+}
